@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DetalleActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar"
+            app:expandedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded.Shadow">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@drawable/a"
+                    android:src="@drawable/ic_photo"
+                    android:scaleType="centerCrop"
+                    app:fillColor="@color/primary_light"
+                    app:pageColor="@color/primary_light"
+                    app:radius="6dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="@color/secondary_text"
+                    app:strokeWidth="1dp">
+                </com.synnapps.carouselview.CarouselView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="vertical"
+                    android:layout_marginTop="?attr/actionBarSize">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        style="@style/AppTheme.ImageViewButton"
+                        android:id="@+id/imgDeleteFoto"
+                        android:src="@drawable/ic_close_box" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        style="@style/AppTheme.ImageViewButton"
+                        android:id="@+id/imgFromGalery"
+                        android:src="@drawable/ic_image"
+                        />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        style="@style/AppTheme.ImageViewButton"
+                        android:id="@+id/imgFromUrl"
+                        android:src="@drawable/ic_earth_box"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+
+    <include layout="@layout/content_detalle" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/square_edit"
+        android:tint="@android:color/white"/>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

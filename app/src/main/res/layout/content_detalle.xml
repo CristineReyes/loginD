@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContainerMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetalleActivity"
+    android:background="@drawable/c11"
+    android:alpha="0.90"
+    tools:showIn="@layout/activity_detalle">
+
+
+    <LinearLayout
+        android:id="@+id/linearDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:theme="@style/TextLabel2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist.hint.name"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="@integer/nombre.maxlenght"
+            android:textColor="@color/buttonText"
+            android:textStyle="bold|italic"
+            android:theme="@style/EditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:theme="@style/TextLabel2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtBabosaFamosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist.hint.babosafamosa"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="@integer/nombre.maxlenght"
+            android:imeOptions="actionNext"
+            android:textColor="@color/buttonText"
+            android:textStyle="bold|italic"
+            android:theme="@style/EditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            app:hintTextAppearance="@style/TextLabel"
+            android:theme="@style/TextLabel2">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtHabitat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/artist.hint.habitat"
+                android:maxLength="@integer/nombre.maxlenght"
+                android:inputType="textMultiLine"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold|italic"
+                android:theme="@style/EditText"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            app:hintTextAppearance="@style/TextLabel"
+            android:theme="@style/TextLabel2">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtTipoPoder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/artist.hint.tipoPoder"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/nombre.maxlenght"
+                android:imeOptions="actionNext"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold|italic"
+                android:theme="@style/EditText"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            app:hintTextAppearance="@style/TextLabel"
+            android:theme="@style/TextLabel2">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtElemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/artist.hint.elemento"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/nombre.maxlenght"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold|italic"
+                android:theme="@style/EditText"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            app:hintTextAppearance="@style/TextLabel"
+            android:theme="@style/TextLabel2">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtRareza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/artist.hint.rareza"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/nombre.maxlenght"
+                android:imeOptions="actionNext"
+                android:textColor="@color/buttonText"
+                android:textStyle="bold|italic"
+                android:theme="@style/EditText"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextLabel"
+        android:theme="@style/TextLabel2">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtVersionMalvada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist.hint.versionMalvada"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="@integer/nombre.maxlenght"
+            android:imeOptions="actionNext"
+            android:textColor="@color/buttonText"
+            android:textStyle="bold|italic"
+            android:theme="@style/EditText"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:hintTextAppearance="@style/TextLabel"
+        android:theme="@style/TextLabel2">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtNotas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|start"
+            android:hint="@string/artist.hint.notas"
+            android:inputType="textMultiLine"
+            android:maxLength="@integer/notas"
+            android:textColor="@color/buttonText"
+            android:textStyle="bold|italic"
+            android:theme="@style/EditText"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
