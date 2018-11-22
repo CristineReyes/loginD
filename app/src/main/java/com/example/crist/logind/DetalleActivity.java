@@ -111,6 +111,12 @@ public class DetalleActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             Log.i("EnableElements: ", "Editables " + e.getMessage());
+            Log.i("EnableElements: 1 ", "Editables " + e.getMessage());
+            Log.i("EnableElements: 2 ", "Editables " + e.getMessage());
+            Log.i("EnableElements: 2 ", "Editables " + e.getMessage());
+            Log.i("EnableElements: 2 ", "Editables " + e.getMessage());
+
+
         }
 
         //imgFoto.setPageCount(sampleImages.length); // imagenes
